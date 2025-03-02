@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>优雅贪吃蛇</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>优雅贪吃蛇</h1>
+            <div class="score">分数: <span id="score">0</span></div>
+        </div>
+        
+        <div class="game-area" id="gameArea">
+            <!-- 游戏区域将由JavaScript动态生成 -->
+        </div>
+
+        <div class="controls">
+            <div class="control-row">
+                <button class="control-btn up">↑</button>
+            </div>
+            <div class="control-row">
+                <button class="control-btn left">←</button>
+                <button class="control-btn down">↓</button>
+                <button class="control-btn right">→</button>
+            </div>
+        </div>
+
+        <div class="game-overlay" id="gameOverlay">
+            <div class="overlay-content">
+                <h2>开始游戏</h2>
+                <p>使用方向键或屏幕按钮控制蛇的移动</p>
+                <button id="startButton" class="start-btn">开始游戏</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
